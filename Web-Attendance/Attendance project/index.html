@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-----------------START HEADER SECTION ---------------->
+    <aside>
+      <div class="top">
+        <div class="logo">
+          <img src="" alt="">  
+          <h2><span>Atten</span>dance</h2>
+        </div>
+
+        <div class="close" id="close-btn">  
+         <span><i class="fas fa-times"></i></span> 
+        </div>
+      </div>
+
+      <div class="sidebar">
+        <a href="index.html"class="active">
+          <span><i class="fas fa-th-large"></i></span>
+          <h3>Dashboard</h3>
+        </a>
+        <a href="">
+          <span><i class="fas fa-cogs"></i></span>
+          <h3>Settings</h3>
+        </a>
+        <a href="">
+          <span><i class="far fa-sign-out-alt"></i></span>
+          <h3>Logout</h3>
+        </a>
+      </div>
+    </aside>
+<!-----------------END HEADER SECTION ---------------->
+<!-----------------START MAIN SECTION ---------------->
+    <main>
+      <h1>Dashboard</h1>
+
+      <!-- <div class="date"> -->
+        <!-- <input type="date"> -->
+        <div class="calendar">
+          <div class="left-side">
+            <p id="date">01</p>
+            <p id="day">Sunday</p>
+          </div>
+          <div class="right-side">
+            <p id="month">January</p>
+            <p id="year">2020</p>
+          </div> 
+        </div>
+      <!-- </div> -->
+
+      <div class="Lecture">
+        <div class="current-cls">
+          <span><i class="fas fa-bullhorn"></i></span>
+          <div class="middle">
+            <div class="left">
+              <h3>Current Lecture</h3>
+              <h1>CSC 423</h1>
+            </div>
+            <!-- <div class="progress">
+              <svg>
+                <circle cx="38" cy="38" r="36"></circle>
+              </svg>
+              <div class="number">
+                <p>81%</p>
+              </div>
+            </div> -->
+          </div>
+          <div class="outer-wrapper">
+            <div class="clock">
+              <div class="clock-cover">
+                <div class="main">
+                  <div class="hour">
+                    <p class="number" id="hour">02</p>
+                     <p>Hours</p>
+                  </div>
+                  <p class="colon">:</p>
+                  <div class="min">
+                    <p class="number" id="min">02</p>
+                     <p>Minutes</p>
+                  </div>
+                  <p class="colon">:</p>
+                  <div class="sec">
+                    <p class="number" id="sec">02</p>
+                     <p>Seconds</p>
+                  </div>
+                  <p class="colon">:</p>
+                  <div class="am-pm">
+                    <p class="number" id="am-pm">AM</p>
+                    <p class="other-am-pm">PM</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <small class="text-muted">Duration 2 Hours</small>
+        </div>
+        
+      </div>
+      
+     
+      <!------------------------- END OF INSIGHTS --------------->
+
+      <div class="lecture-table">
+        <h2>Lectures</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Lecture</th>
+              <th>Time</th>
+              <th>Mark Att</th>
+              <th>Att Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-cell="Lecture">CSC 421</td>
+              <td data-cell="Time">8:00-10:00am</td>
+              <td data-cell="Mark Att"><button type="submit">Click Here</button></td>
+              <td class="warning" data-cell="Att Status">Pending</td>
+  
+            </tr>
+            <tr>
+              <td data-cell="Lecture">CSC 425</td>
+              <td data-cell="Time">10:00-12:00am</td>
+              <td data-cell="Mark Att"><button type="submit">Click Here</button></td>
+              <td class="warning" data-cell="Att Status">Pending</td>
+  
+            </tr>
+            <tr>
+              <td data-cell="Lecture">CSC 424</td>
+              <td data-cell="Time">10:00-12:00am</td>
+              <td data-cell="Mark Att"><button type="submit">Click Here</button></td>
+              <td class="warning" data-cell="Att Status">Pending</td>
+  
+            </tr>
+            <tr>
+              <td data-cell="Lecture">CSC 422</td>
+              <td data-cell="Time">10:00-12:00am</td>
+              <td data-cell="Mark Att"><button type="submit">Click Here</button></td>
+              <td class="warning" data-cell="Att Status">Pending</td>
+  
+            </tr>
+            <tr>
+              <td data-cell="Lecture">CSC 422</td>
+              <td data-cell="Time">10:00-12:00am</td>
+              <td data-cell="Mark Att"><button type="submit">Click Here</button></td>
+              <td class="warning" data-cell="Att Status">Pending</td>
+            </tr>
+            
+          </tbody>
+        </table>
+        <a href="#">Show All</a>
+      </div>
+    </main>
+    <!----------------------- END MAIN SECTION--------------------->
+<!-----------------START RIGHT SECTION USING GRID ---------------->
+    <div class="right">
+      <div class="top">
+        <button id="menu-btn">
+          <span><i class="fas fa-bars"></i></span>
+        </button>
+        <div class="theme-toggler">
+          <span class="active"><i class="far fa-sun"></i></span>
+          <span><i class="fas fa-moon"></i></span>
+        </div>
+        <!-- <div class="profile">
+          <div class="info">
+            <p>Hey, <b>David</b></p>
+            <small class="text-muted">Admin</small>
+          </div>
+          <div class="profile-photo">
+            <img src="" alt="">
+          </div>
+        </div>  -->
+      </div>
+      <!-----------------END OF TOP ------------------>
+      <div class="next">
+        <div class="next-cls">
+          <span><i class="fas fa-bullhorn"></i></span>
+          <div class="middle">
+            <div class="left">
+              <h3>Next Lecture</h3>
+              <h1>CSC 421</h1>
+            </div>
+          </div>
+          <small class="text-muted">8:00-10:00am</small>
+        </div>
+        <!---------------------- END OF INCOME------------------>
+      </div>
+      <!------------------------- END OF INSIGHTS --------------->
+
+    </div>
+ <!-----------------END RIGHT SECTION ---------------->   
+  </div>
+
+ 
+  <script src="script.js"></script>
+</body>
+</html>
